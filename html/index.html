@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>T1</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" target="blank"><img class="logo" src="../images/T1-Red.png"></a>
+    <a class="nav" href="about.html">ABOUT</a>
+    <a class="nav" href="members.html">MEMBERS</a>
+    <div class="dropdown">
+      <button class="dropbtn">HISTORY
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a class="nav" href="2016.html">2016</a>
+        <a class="nav" href="2015.html">2015</a>
+        <a class="nav" href="2013.html">2013</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../images/T1-1.png" height=700px></div>
+      <div class="swiper-slide"><img src="../images/T1-2.png" height=700px></div>
+      <div class="swiper-slide"><img src="../images/T1-3.jpg" height=700px></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  </script>
+</body>
+<footer>
+  <div class="footer-main">
+    <a href="https://www.twitter.com/T1" target="_blank"><img src="../images/Twitter.png" alt="Twitter" width=20px height=20px></a>
+    <a href="https://www.youtube.com/sktt1" target="_blank"><img src="../images/YouTube.png" alt="YouTube" width=20px height=20px></a>
+    <a href="https://www.twitch.tv/team/sktt1" target="_blank"><img src="../images/Twitch.png" alt="Twitch" width=20px height=20px></a>
+    <a href="https://www.instagram.com/t1lol/" target="_blank"><img src="../images/Instagram.png" alt="Instagram" width=20px height=20px></a>
+    <p>CREATOR: Randy Li</p>
+  </div>
+</footer>
+</html>
